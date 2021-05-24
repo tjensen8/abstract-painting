@@ -1,4 +1,7 @@
 
+RAW_IMG_DIR: '.\data\raw\'
+PREPROCESSED_IMG_DIR: '.\data\preprocessed'
+
 IMAGE_PARAMS:
   IMAGE_HEIGHT: 1080
   IMAGE_WIDTH: 1920

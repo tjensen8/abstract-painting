@@ -10,6 +10,7 @@ from load_config import load_config
 config = load_config()
 
 def iterate_in_directory(directory=None, save_to_dir=None):
+    
     if directory==None:
         print("loading directory from config...")
         print(config['RAW_IMG_DIR'])
@@ -33,10 +34,12 @@ def iterate_in_directory(directory=None, save_to_dir=None):
         save_to_dir=save_to_dir
         )
     """
+    # image generator to flow from directory
     idg.flow_from_directory(
         directory=directory,
         target_size=(config['IMAGE_PARAMS']['IMAGE_HEIGHT'],config['IMAGE_PARAMS']['IMAGE_WIDTH'])
         )
+
     return idg
 
 if __name__ == '__main__':
